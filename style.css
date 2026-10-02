@@ -1,0 +1,235 @@
+/* ======================================
+   CONFIGURACIÓN GENERAL
+====================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #333;
+}
+
+
+/* ======================================
+   HEADER
+====================================== */
+
+header {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+
+/* ======================================
+   CONTENIDO PRINCIPAL
+====================================== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* ======================================
+   FILTROS
+====================================== */
+
+.controles {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.controles div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.controles label {
+    font-weight: bold;
+}
+
+.controles select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.controles select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+/* ======================================
+   PRODUCTOS
+====================================== */
+
+#productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* ======================================
+   TARJETA DEL PRODUCTO
+====================================== */
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.producto h2 {
+    color: #2563eb;
+    font-size: 21px;
+}
+
+.producto p {
+    font-size: 15px;
+}
+
+.producto .precio {
+    font-size: 22px;
+    font-weight: bold;
+    color: #16a34a;
+}
+
+
+/* ======================================
+   BOTÓN ELIMINAR
+====================================== */
+
+.eliminar {
+    background-color: #dc2626;
+    color: white;
+
+    border: none;
+    padding: 10px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    margin-top: 5px;
+}
+
+.eliminar:hover {
+    background-color: #b91c1c;
+}
+
+
+/* ======================================
+   RESUMEN
+====================================== */
+
+.resumen {
+    background-color: white;
+
+    margin-top: 30px;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-around;
+
+    border: 1px solid #ddd;
+}
+
+.resumen p {
+    font-size: 17px;
+}
+
+.resumen strong {
+    color: #2563eb;
+    font-size: 20px;
+}
+
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer {
+    background-color: #1e293b;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media (max-width: 800px) {
+
+    #productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .controles {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #productos {
+        grid-template-columns: 1fr;
+    }
+
+    .resumen {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+}

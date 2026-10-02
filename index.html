@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Productos</h1>
+
+        <p>
+            Herramientas para organizar mejor tu día
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <!-- FILTROS -->
+
+        <section class="controles">
+
+            <div>
+
+                <label for="categoria">
+                    Categoría
+                </label>
+
+                <select id="categoria">
+
+                    <option value="Todos">
+                        Todas
+                    </option>
+
+                    <option value="Tecnología">
+                        Tecnología
+                    </option>
+
+                    <option value="Escritorio">
+                        Escritorio
+                    </option>
+
+                    <option value="Organización">
+                        Organización
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div>
+
+                <label for="orden">
+                    Ordenar por precio
+                </label>
+
+                <select id="orden">
+
+                    <option value="normal">
+                        Orden original
+                    </option>
+
+                    <option value="menor">
+                        Menor a mayor
+                    </option>
+
+                    <option value="mayor">
+                        Mayor a menor
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- AQUÍ APARECERÁN LOS 8 PRODUCTOS -->
+
+        <section id="productos">
+
+        </section>
+
+
+        <!-- RESUMEN -->
+
+        <section class="resumen">
+
+            <p>
+                Productos mostrados:
+                <strong id="cantidad">0</strong>
+            </p>
+
+            <p>
+                Precio total:
+                <strong id="total">$0</strong>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
